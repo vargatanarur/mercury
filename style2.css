@@ -1,0 +1,128 @@
+/* Alap stílus */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: radial-gradient(circle at top, #0f2027, #203a43, #000000);
+    color: #ffffff;
+}
+
+/* Fejléc */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    box-shadow: 0 0 20px rgba(255, 0, 100, 0.6);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header p {
+    opacity: 0.9;
+}
+
+/* Menü */
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #00eaff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+/* Tartalom */
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+/* Címek */
+h2 {
+    color: #00eaff;
+    border-left: 5px solid #ff512f;
+    padding-left: 10px;
+}
+
+/* Kép */
+.kep {
+    display: block;
+    max-width: 300px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 0, 100, 0.6);
+}
+
+/* Kártyák */
+.kartyak {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.kartya {
+    background: linear-gradient(145deg, #1c1c1c, #2e2e2e);
+    padding: 20px;
+    border-radius: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 234, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kartya:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(255, 80, 80, 0.7);
+}
+
+.kartya h3 {
+    color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #000;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Reszponzív */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .kartyak {
+        flex-direction: column;
+        align-items: center;
+    }
+}
